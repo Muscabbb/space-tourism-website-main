@@ -1,0 +1,100 @@
+/* main Section in home Page  */
+body{
+    background: url(/starter-code/assets/home/background-home-desktop.jpg),no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 150px);
+}
+.container .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: #e2e2e2;
+    width: 50%;
+}
+.text h3{
+    font-weight: 300;
+    letter-spacing: 2.6px;
+    font-size: 1.02rem;
+}
+.text span{
+    display: block;
+    margin: 10px 0;
+    font-family: serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 4.2px;
+    font-weight: 600;
+}
+.text p{
+    line-height: 1.5;
+    width: 400px;
+    font-size: 1.01rem;
+    font-weight: 300;
+}
+.container .explore {
+    width: 200px;
+    height: 200px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.container .explore:hover{
+    background: none;
+}
+
+
+/* Tablet and Mobile Views  */
+@media (max-width:992px) {
+    body{
+        font-size: .2rem;
+        background: url(/starter-code/assets/home/background-home-tablet.jpg),no-repeat;
+        background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    }
+    .container{
+        margin-top: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: calc(100vh - 50px);
+        font-size: .2rem;
+    }
+    p{
+        width: auto!important;
+        text-wrap: wrap;
+    }
+    .container .explore{
+        width: 130px;
+        height: 130px;
+        font-size: 1.7rem;
+    }
+}
+@media (max-width:768px) {
+    body{
+        background: url(/starter-code/assets/home/background-home-mobile.jpg),no-repeat;
+        background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+        font-size: .3rem;
+    }
+
+}
+/* Tablet and Mobile Views  */
+
+/* main Section in home Page  */

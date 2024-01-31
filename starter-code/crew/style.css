@@ -1,0 +1,93 @@
+body{
+    background: url(/starter-code/assets/crew/background-crew-desktop.jpg),no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* container section as usuall */
+.crew-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.crew-section .crew-info{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.crew-info .crew-word{
+    color: #ffffff9e;
+    font-size: 1.01rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.crew-info .crew-name{
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2.3px;
+    text-transform: uppercase;
+    font-family: serif;
+}
+.crew-info .crew-sp-info{
+    color: #ffffff9e;
+    line-height: 1.5;
+    font-size: 1.04rem;
+}
+.crew-info .crew-list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0 0;
+}
+.crew-list li{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.crew-active{
+    border: none;
+    background: white;
+}
+
+.crew-section .crew-img img{
+    width: 400px;
+}
+
+/* container section as usuall */
+
+/* media section here  */
+@media (max-width:969px) {
+    body{
+        background: url(/starter-code/assets/crew/background-crew-tablet.jpg),no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .crew-section .crew-img{
+        display: none;
+    }
+    .crew-section .crew-info{
+        flex-basis: 100%;
+    }
+    .crew-info .crew-list{
+        justify-content: center;
+    }
+}
+
+@media (max-width:768px) {
+    body{
+        background: url(/starter-code/assets/crew/background-crew-mobile.jpg),no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
+/* media section here  */

@@ -1,0 +1,114 @@
+body{
+    background: url(/starter-code/assets/destination/background-destination-desktop.jpg),no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* container section  */
+
+
+.destinations{
+    display: flex;
+    justify-content: space-between;
+}
+.destinations .img-dest img{
+    width: 350px;
+}
+.destinations .destination-desc{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.destination-desc .destinations-list{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.destinations-list a{
+    color: rgb(255 255 255 / 72%);
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+.active{
+    border-bottom: 1px solid white;
+    color: white !important;
+}
+
+.picked-dest{
+    font-size: 3.4rem;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2.3px;
+    text-transform: uppercase;
+    font-family: serif;
+}
+.picked-dest + p{
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.541);
+    font-weight: 300;
+}
+.distance-and-travl{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.destination-desc p{
+    color: rgb(255 255 255 / 72%);
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.destination-desc p span{
+    display: block;
+    padding-top: 10px;
+    font-size: 1.9rem;
+    color: white;
+}
+
+/* container section  */
+
+/* working with medea quries */
+@media (max-width:996px) {
+    body{
+        font-size: .4rem;
+        background: url(/starter-code/assets/destination/background-destination-tablet.jpg),no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    }
+    .destinations .img-dest img{
+        display: none;
+    }
+    .destination-desc{
+        flex-basis: 100% !important;
+        align-items: center;
+    }
+}
+
+@media (max-width:768px) {
+    body{
+        font-size: .4rem;
+        background: url(/starter-code/assets/destination/background-destination-mobile.jpg),no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    }
+    .destinations .img-dest img{
+        display: none;
+    }
+    .destination-desc{
+        flex-basis: 100% !important;
+        align-items: center;
+    }
+}
+
+/* working with medea quries */

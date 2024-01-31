@@ -1,0 +1,125 @@
+body{
+    background: url(/starter-code/assets/technology/background-technology-desktop.jpg),no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* dealing with the container content  */
+
+.launch-container{
+    display: flex;
+    justify-content: space-between;
+}
+.launch-container .launch-info{
+    flex-basis: 50%;
+    display: flex;
+    justify-content:space-between;
+}
+.launch-info .launch-lists{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.launch-lists li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.507);
+    color: white;
+    font-size: 1.4rem;
+    transition: .5s ease;
+}
+.launch-lists li a:hover{
+    color: #000;
+    background: rgba(255, 255, 255, 0.164);
+}
+.launch-lists-active{
+    background: white;
+    color: #000 !important;
+}
+.launch-info .lauch-description{
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.lauch-description span{
+    color: #ffffff9e;
+    font-size: 1.01rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.lauch-description .launch-title{
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2.3px;
+    text-transform: uppercase;
+    font-family: serif;
+}
+.lauch-description p{
+    color: #ffffff9e;
+    line-height: 1.4;
+    font-size: 1.04rem;
+}
+
+
+.launch-container .launch-img {
+    flex-basis: 45%;
+}
+.launch-container .launch-img img{
+    width: 400px;
+}
+
+
+/* dealing with the container content  */
+
+
+/* media Queries  */
+@media (max-width:969px) {
+    html{
+        font-size: 1rem !important;
+    }
+    body{
+        background: url(/starter-code/assets/technology/background-technology-tablet.jpg),no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .launch-container .launch-img {
+        display: none;
+    }
+    .launch-info{
+        flex-basis: 100% !important;
+    }
+}
+
+@media (max-width:768px) {
+    html{
+        font-size: .9rem !important;
+    }
+    body{
+        background: url(/starter-code/assets/technology/background-technology-mobile.jpg),no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .launch-info{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .lauch-description{
+        order: -1;
+    }
+    .launch-lists{
+        flex-direction: row !important;
+        justify-content: center;
+    }
+}
+/* media Queries  */
